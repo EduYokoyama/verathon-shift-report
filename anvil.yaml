@@ -297,12 +297,14 @@ db_schema:
       type: string
     server: full
     title: shifts
+metadata: {title: Daily Shift report}
 native_deps:
   head_html: |2
 
     <style>
       .anvil-panel-section-container { padding: 0 15px; }
     </style>
+package_name: verathon_shift_report
 runtime_options:
   client_version: '2'
   server_spec: {base: python310-standard}
@@ -313,3 +315,4 @@ services:
   server_config: {}
   source: /runtime/services/tables.yml
 startup_form: Form1
+uplink_visible: true
