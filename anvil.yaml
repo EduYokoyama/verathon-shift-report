@@ -314,5 +314,6 @@ services:
 - client_config: {}
   server_config: {}
   source: /runtime/services/tables.yml
-startup_form: Form1
+startup: {module: Form1, type: form}
+startup_form: null
 uplink_visible: true
