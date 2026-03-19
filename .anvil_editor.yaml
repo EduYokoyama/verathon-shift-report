@@ -4,4 +4,7 @@ unique_ids:
     Form1: '1773924514651250168911629.40137'
   modules: {}
   scripts: {}
-  server_modules: {}
+  server_modules:
+    DatabaseService: '177392542832014427296444.267101'
+    ListsService: '1773925540007788502152076.3298'
+    ReportService: '1773925624686824299958874.8523'

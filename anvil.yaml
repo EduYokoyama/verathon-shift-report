@@ -1,3 +1,302 @@
+db_schema:
+  app_config:
+    client: none
+    columns:
+    - admin_ui: {order: 0, width: 200}
+      client_hidden: false
+      name: key
+      type: string
+    - admin_ui: {order: 1, width: 200}
+      client_hidden: false
+      name: value
+      type: string
+    server: full
+    title: app_config
+  issues_list:
+    client: none
+    columns:
+    - admin_ui: {order: 0, width: 200}
+      client_hidden: false
+      name: machine_type
+      type: string
+    - admin_ui: {order: 1, width: 200}
+      client_hidden: false
+      name: issue_name
+      type: string
+    server: full
+    title: issues_list
+  machine_reports:
+    client: none
+    columns:
+    - admin_ui: {order: 0, width: 200}
+      client_hidden: false
+      name: shift
+      target: shifts
+      type: link_single
+    - admin_ui: {order: 1, width: 200}
+      client_hidden: false
+      name: run_total
+      type: number
+    - admin_ui: {order: 2, width: 200}
+      client_hidden: false
+      name: lost_total
+      type: number
+    - admin_ui: {order: 3, width: 200}
+      client_hidden: false
+      name: cot
+      type: number
+    - admin_ui: {order: 4, width: 200}
+      client_hidden: false
+      name: late_start
+      type: number
+    - admin_ui: {order: 5, width: 200}
+      client_hidden: false
+      name: wo1
+      type: string
+    - admin_ui: {order: 6, width: 200}
+      client_hidden: false
+      name: pn1
+      type: string
+    - admin_ui: {order: 7, width: 200}
+      client_hidden: false
+      name: mat1
+      type: string
+    - admin_ui: {order: 8, width: 200}
+      client_hidden: false
+      name: act_cases1
+      type: number
+    - admin_ui: {order: 9, width: 200}
+      client_hidden: false
+      name: lost_a
+      type: number
+    - admin_ui: {order: 10, width: 200}
+      client_hidden: false
+      name: lost_b
+      type: number
+    - admin_ui: {order: 11, width: 200}
+      client_hidden: false
+      name: efficiency1
+      type: number
+    - admin_ui: {order: 12, width: 200}
+      client_hidden: false
+      name: act_hr1
+      type: number
+    - admin_ui: {order: 13, width: 200}
+      client_hidden: false
+      name: act_mp1
+      type: number
+    - admin_ui: {order: 14, width: 200}
+      client_hidden: false
+      name: run2
+      type: number
+    - admin_ui: {order: 15, width: 200}
+      client_hidden: false
+      name: geo2
+      type: string
+    - admin_ui: {order: 16, width: 200}
+      client_hidden: false
+      name: plan_cases2
+      type: number
+    - admin_ui: {order: 17, width: 200}
+      client_hidden: false
+      name: issue_c
+      type: string
+    - admin_ui: {order: 18, width: 200}
+      client_hidden: false
+      name: issue_d
+      type: string
+    - admin_ui: {order: 19, width: 200}
+      client_hidden: false
+      name: attainment2
+      type: number
+    - admin_ui: {order: 20, width: 200}
+      client_hidden: false
+      name: est_hr2
+      type: number
+    - admin_ui: {order: 21, width: 200}
+      client_hidden: false
+      name: plan_mp2
+      type: number
+    - admin_ui: {order: 22, width: 200}
+      client_hidden: false
+      name: next_wo
+      type: string
+    - admin_ui: {order: 23, width: 200}
+      client_hidden: false
+      name: next_geo
+      type: string
+    - admin_ui: {order: 24, width: 200}
+      client_hidden: false
+      name: tool_number
+      type: string
+    - admin_ui: {order: 25, width: 200}
+      client_hidden: false
+      name: labels_ready
+      type: bool
+    - admin_ui: {order: 26, width: 200}
+      client_hidden: false
+      name: machine_id
+      type: string
+    - admin_ui: {order: 27, width: 200}
+      client_hidden: false
+      name: cases_total
+      type: number
+    - admin_ui: {order: 28, width: 200}
+      client_hidden: false
+      name: availability
+      type: number
+    - admin_ui: {order: 29, width: 200}
+      client_hidden: false
+      name: ot
+      type: number
+    - admin_ui: {order: 30, width: 200}
+      client_hidden: false
+      name: early_leave
+      type: number
+    - admin_ui: {order: 31, width: 200}
+      client_hidden: false
+      name: run1
+      type: number
+    - admin_ui: {order: 32, width: 200}
+      client_hidden: false
+      name: geo1
+      type: string
+    - admin_ui: {order: 33, width: 200}
+      client_hidden: false
+      name: plan_cases1
+      type: number
+    - admin_ui: {order: 34, width: 200}
+      client_hidden: false
+      name: issue_a
+      type: string
+    - admin_ui: {order: 35, width: 200}
+      client_hidden: false
+      name: issue_b
+      type: string
+    - admin_ui: {order: 36, width: 200}
+      client_hidden: false
+      name: attainment1
+      type: number
+    - admin_ui: {order: 37, width: 200}
+      client_hidden: false
+      name: est_hr1
+      type: number
+    - admin_ui: {order: 38, width: 200}
+      client_hidden: false
+      name: plan_mp1
+      type: number
+    - admin_ui: {order: 39, width: 200}
+      client_hidden: false
+      name: wo2
+      type: string
+    - admin_ui: {order: 40, width: 200}
+      client_hidden: false
+      name: pn2
+      type: string
+    - admin_ui: {order: 41, width: 200}
+      client_hidden: false
+      name: mat2
+      type: string
+    - admin_ui: {order: 42, width: 200}
+      client_hidden: false
+      name: act_cases2
+      type: number
+    - admin_ui: {order: 43, width: 200}
+      client_hidden: false
+      name: lost_c
+      type: number
+    - admin_ui: {order: 44, width: 200}
+      client_hidden: false
+      name: lost_d
+      type: number
+    - admin_ui: {order: 45, width: 200}
+      client_hidden: false
+      name: efficiency2
+      type: number
+    - admin_ui: {order: 46, width: 200}
+      client_hidden: false
+      name: act_hr2
+      type: number
+    - admin_ui: {order: 47, width: 200}
+      client_hidden: false
+      name: act_mp2
+      type: number
+    - admin_ui: {order: 48, width: 200}
+      client_hidden: false
+      name: next_pn
+      type: string
+    - admin_ui: {order: 49, width: 200}
+      client_hidden: false
+      name: next_mat
+      type: string
+    - admin_ui: {order: 50, width: 200}
+      client_hidden: false
+      name: tool_ready
+      type: bool
+    - admin_ui: {order: 51, width: 200}
+      client_hidden: false
+      name: kit_ready
+      type: bool
+    server: full
+    title: machine_reports
+  part_numbers:
+    client: none
+    columns:
+    - admin_ui: {order: 0, width: 200}
+      client_hidden: false
+      name: machine_id
+      type: string
+    - admin_ui: {order: 1, width: 200}
+      client_hidden: false
+      name: pn
+      type: string
+    - admin_ui: {order: 2, width: 200}
+      client_hidden: false
+      name: geometry
+      type: string
+    - admin_ui: {order: 3, width: 200}
+      client_hidden: false
+      name: material
+      type: string
+    - admin_ui: {order: 4, width: 200}
+      client_hidden: false
+      name: crew_size
+      type: number
+    - admin_ui: {order: 5, width: 200}
+      client_hidden: false
+      name: run_rate
+      type: number
+    - admin_ui: {order: 6, width: 200}
+      client_hidden: false
+      name: est_hrs
+      type: number
+    server: full
+    title: part_numbers
+  shifts:
+    client: none
+    columns:
+    - admin_ui: {order: 0, width: 200}
+      client_hidden: false
+      name: shift_key
+      type: string
+    - admin_ui: {order: 1, width: 200}
+      client_hidden: false
+      name: month
+      type: string
+    - admin_ui: {order: 2, width: 200}
+      client_hidden: false
+      name: day
+      type: string
+    - admin_ui: {order: 3, width: 200}
+      client_hidden: false
+      name: year
+      type: string
+    - admin_ui: {order: 4, width: 200}
+      client_hidden: false
+      name: shift
+      type: string
+    server: full
+    title: shifts
 native_deps:
   head_html: |2
 
