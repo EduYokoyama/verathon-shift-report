@@ -1,0 +1,172 @@
+package_name: VerathonShiftReport
+runtime_version: 3
+metadata:
+  title: Verathon Daily Shift Report
+  description: Manufacturing shift reporting system for Southmedic/Verathon
+
+services:
+  - source: /runtime/services/tables.yml
+    client_config: {}
+    server_config: {}
+
+dependencies: []
+
+db_schema:
+  shifts:
+    title: shifts
+    columns:
+      - name: shift_key
+        admin_ui:
+          width: 200
+        type: string
+      - name: month
+        type: string
+      - name: day
+        type: string
+      - name: year
+        type: string
+      - name: shift
+        type: string
+
+  machine_reports:
+    title: machine_reports
+    columns:
+      - name: shift
+        type: liveObject
+        backend: anvil.tables.Row
+      - name: machine_id
+        type: string
+      - name: run_total
+        type: number
+      - name: cases_total
+        type: number
+      - name: lost_total
+        type: number
+      - name: availability
+        type: number
+      - name: cot
+        type: number
+      - name: ot
+        type: number
+      - name: late_start
+        type: number
+      - name: early_leave
+        type: number
+      - name: wo1
+        type: string
+      - name: run1
+        type: number
+      - name: pn1
+        type: string
+      - name: geo1
+        type: string
+      - name: mat1
+        type: string
+      - name: plan_cases1
+        type: number
+      - name: act_cases1
+        type: number
+      - name: issue_a
+        type: string
+      - name: lost_a
+        type: number
+      - name: issue_b
+        type: string
+      - name: lost_b
+        type: number
+      - name: attainment1
+        type: number
+      - name: efficiency1
+        type: number
+      - name: est_hr1
+        type: number
+      - name: act_hr1
+        type: number
+      - name: plan_mp1
+        type: number
+      - name: act_mp1
+        type: number
+      - name: wo2
+        type: string
+      - name: run2
+        type: number
+      - name: pn2
+        type: string
+      - name: geo2
+        type: string
+      - name: mat2
+        type: string
+      - name: plan_cases2
+        type: number
+      - name: act_cases2
+        type: number
+      - name: issue_c
+        type: string
+      - name: lost_c
+        type: number
+      - name: issue_d
+        type: string
+      - name: lost_d
+        type: number
+      - name: attainment2
+        type: number
+      - name: efficiency2
+        type: number
+      - name: est_hr2
+        type: number
+      - name: act_hr2
+        type: number
+      - name: plan_mp2
+        type: number
+      - name: act_mp2
+        type: number
+      - name: next_wo
+        type: string
+      - name: next_pn
+        type: string
+      - name: next_geo
+        type: string
+      - name: next_mat
+        type: string
+      - name: tool_number
+        type: string
+      - name: tool_ready
+        type: bool
+      - name: labels_ready
+        type: bool
+      - name: kit_ready
+        type: bool
+
+  part_numbers:
+    title: part_numbers
+    columns:
+      - name: machine_id
+        type: string
+      - name: pn
+        type: string
+      - name: geometry
+        type: string
+      - name: material
+        type: string
+      - name: crew_size
+        type: number
+      - name: run_rate
+        type: number
+      - name: est_hrs
+        type: number
+
+  issues_list:
+    title: issues_list
+    columns:
+      - name: machine_type
+        type: string
+      - name: issue_name
+        type: string
+
+  app_config:
+    title: app_config
+    columns:
+      - name: key
+        type: string
+      - name: value
+        type: string
